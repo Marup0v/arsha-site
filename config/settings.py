@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-dtj&zxmk*v+^w9vo2t7&u#z!1$*@+u^gpzi2vx5g*jgf4rz0df
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['arsha-site.onrender.com', '127.0.0.1', 'localhost', '*']
 
 
 # Application definition
