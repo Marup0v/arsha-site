@@ -64,7 +64,7 @@ ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.DjangoTemplates',
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -113,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
-LANGUAGE_CODE = 'uz'  # Admin panelni o'zbek tiliga o'tkazdik (ixtiyoriy, inglizcha uchun 'en-us' qoldiring)
+LANGUAGE_CODE = 'uz'  # Admin panelni o'zbek tiliga o'tkazdik
 
 TIME_ZONE = 'Asia/Tashkent' # Vaqt mintaqasini O'zbekistonga mosladik
 
@@ -129,7 +129,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# WhiteNoise orqali statik fayllarni saqlash va siqish
+# WhiteNoise orqali statik fayllarni saqlash
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
@@ -152,7 +152,7 @@ UNFOLD = {
             "200": "228 228 231",
             "300": "212 212 216",
             "400": "161 161 170",
-            "500": "79 70 229", # Indigo binafsha rang (chiroyli va zamonaviy ko'rinish beradi)
+            "500": "79 70 229", # Indigo binafsha rang
             "600": "67 56 202",
             "700": "55 48 163",
             "800": "49 46 129",
